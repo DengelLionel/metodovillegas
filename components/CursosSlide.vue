@@ -29,7 +29,7 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';  // Importar los módulos necesarios
+import { Navigation, Pagination, Scrollbar } from 'swiper';  // Importar los módulos necesarios
 import 'swiper/swiper-bundle.css';  // Importar el CSS necesario
 </script>
 
