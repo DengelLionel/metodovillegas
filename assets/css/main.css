@@ -8,3 +8,17 @@
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
     color: white !important;
 }
+
+h1, h2, h3{
+    font-family: "Kurale", serif;
+   font-weight: 600;
+   font-style: normal;
+ }
+ p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ body{
+    overflow-x: hidden;
+ }
