@@ -1,5 +1,5 @@
 <template>
-      <button :type="type" class="bg-transparent border-[1.5px] border-boton hover:bg-boton text-white font-semibold py-3 px-8  transition-colors duration-300 ease-in-out">
+      <button :type="type" class="bg-transparent border-[1.5px] border-boton hover:bg-boton hover:text-primary text-white font-semibold py-3 px-8  transition-colors duration-300 ease-in-out">
         <slot>Botón</slot>
       </button>
 </template>
