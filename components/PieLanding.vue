@@ -13,14 +13,16 @@
   
   </div>
         </div>
-      
-
-    <img src="/images/ventana2.webp" class="imagen-central" alt="ventana">
 
     </div>
 </template>
 <style scoped>
-
+.imagenlogoiconosredes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .contenedorgeneralpielandign{
     display: flex;
     justify-content: center;
@@ -33,19 +35,13 @@
 flex-direction: column;
 gap: 20px;
     }
-    .imagen-central{
-        width: 100%;
-        border-radius: 15px;
-    }
+  
  }
  @media (min-width: 769px) {
      .contenedorgeneralpielandign{
 flex-direction:row;
 gap: 30px;
     }
-      .imagen-central{
-        width: 50%;
-         border-radius: 20px;
-    }
+    
  }
 </style>
