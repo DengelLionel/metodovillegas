@@ -8,7 +8,7 @@
 una vida plena, llena de abundancia, amor y éxito sin esfuerzo.
       </p>
       <div class="flex flex-row justify-center align-center mb-[20px]">
-<img src="/images/ventana2.webp" class="w-[30%]" alt="Transforma tu vida">
+<img src="/images/ventana2.webp" class="w-[70%] md:w-[30%]" alt="Transforma tu vida">
       </div>
       
       <h2 class="text-titulo text-lg text-center lg:text-[2.2rem]">Que aprenderas:</h2>
