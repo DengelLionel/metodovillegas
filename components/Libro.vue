@@ -17,16 +17,21 @@ felicidad están a tu alcance.</strong>
         <div class="">
 
          <div class="contenedor-bonos-guias">
+            <div class="guia-cuadro-bonoguias">
 <p class="text-lg lg:text-xl text-left text-white  tracking-[0.06em] w-full">
-       
                 Guia de manifestación por 21 dias
-           
         </p>
-        <p class="text-lg lg:text-xl text-left text-white  tracking-[0.06em] w-full">
+        <img class="w-[50%]" src="/images/guia1.webp" alt="Guia">
+            </div>
+    <div  class="guia-cuadro-bonoguias">
+  <p class="text-lg lg:text-xl text-left text-white  tracking-[0.06em] w-full">
             Guia paso a paso para empoderar tu potencial, esto significa que el cliente va aprender a
 tener claridad mental y poder visualizar mejor sus objetivos en la vida, para así empezar a
 tomar acción.
         </p>
+         <img class="w-[50%]" src="/images/libro1.webp" alt="Guia">
+    </div>
+      
         <p class="text-lg lg:text-xl text-left text-white tracking-[0.06em] w-full">
             Guia de creencias limitantes que te van ayudar a identificar tus bloqueos mentales
 
@@ -58,9 +63,7 @@ tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
 </ButtonVillegas>
 </div>
 
-<h2 class="text-titulo text-lg text-center lg:text-[2.2rem]">
-    Bonus Exclusivos
-</h2>
+
 
 
         </div>
@@ -74,14 +77,28 @@ tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
     .contenedor-bonos-guias{
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
         margin-top: 80px;
         margin-bottom: 80px;
         background-color: rgba(0,0,0,0.8);
-        padding:10px;
+        padding:16px;
+    }
+    .guia-cuadro-bonoguias{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (min-width: 769px){
+      .guia-cuadro-bonoguias{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+          justify-content: start;
+        align-items: start;
+    }
     .contenedor-bonos-guias{
         display:grid;
         grid-template-columns:repeat(2, 1fr);

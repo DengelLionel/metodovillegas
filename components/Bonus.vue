@@ -1,4 +1,9 @@
 <template>
+<div>
+  <Subtitulo>
+    Bonus Exclusivos
+</Subtitulo>
+
   <div class="bg-gray-900 text-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-[60px] mb-[80px]">
     <!-- Encabezado del componente -->
     <p class="text-xl lg:text-2xl text-center mb-10 font-bold tracking-wide text-yellow-300">
@@ -19,6 +24,7 @@
       <h2 class="text-2xl lg:text-3xl font-semibold mb-3">Valor Total: <span class="text-yellow-300">$110</span></h2>
       <h2 class="text-2xl lg:text-3xl font-semibold mb-3">Precio Actual: <span class="text-green-400">$14</span></h2>
     </div>
+  </div>
   </div>
 </template>
 

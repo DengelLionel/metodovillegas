@@ -14,11 +14,16 @@ h1, h2, h3{
    font-weight: 600;
    font-style: normal;
  }
- p{
+ p, span{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
  }
  body{
     overflow-x: hidden;
+ }
+ .icono-villegas{
+    width: 28px;
+    height: 28px;
+    color:#fafafa;
  }

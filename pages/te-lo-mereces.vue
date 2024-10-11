@@ -1,8 +1,8 @@
 <template>
 
 <!--     <HeroSection /> -->
-    <section class="mt-10 px-4 md:px-16">
-      <h1 class="text-center text-3xl leading-normal  lg:text-[3rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días</h1>
+    <section class="mt-10 md:px-16">
+      <h1 class="text-center text-3xl leading-normal  lg:text-[3rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días </h1>
       <p class="text-lg lg:text-2xl text-center mb-10 text-white tracking-[0.06em]">
      Transforma tu vida en menos de un mes con técnicas universales probadas que te llevarán a vivir
 una vida plena, llena de abundancia, amor y éxito sin esfuerzo.
@@ -21,9 +21,11 @@ más profundos.</p>
      <SuenaFamiliar/>
      <TestimoniosLanding/>
      <Libro/>
+     <Regalos/>
      <Bonus/>
      <TextosLibro/>
      <Faqs/>
+       <PieLanding/>
       <NuxtPage />
     </section>
 
@@ -40,6 +42,8 @@ import Libro from '~/components/Libro.vue'
 import Faqs from '~/components/Faqs.vue'
 import TextosLibro from '~/components/TextosLibro.vue'
 import Bonus from '~/components/Bonus.vue'
+import Regalos from  '~/components/Regalos.vue'
+import PieLanding from '~/components/PieLanding.vue'
 // Asignar el layout vacío para esta página
 definePageMeta({
   layout: 'empty'

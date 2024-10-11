@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor-oferta-contador mb-[80px] flex flex-col justify-center  p-6 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl shadow-lg">
+  <div class="contenedor-oferta-contador mb-[80px] flex flex-col justify-center p-6 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl shadow-lg">
     <h3 class="text-lg lg:text-2xl text-center text-white tracking-[0.06em] mb-6">
       Esta oferta acabará en: 
     </h3>
@@ -23,6 +23,10 @@
     <ButtonVillegas v-if="!isExpired"> 
       ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
     </ButtonVillegas>
+    <!-- Mensaje cuando la oferta se acaba -->
+    <p v-else class="text-3xl lg:text-4xl text-red-500 text-center font-semibold mt-4">
+      Se acabó la oferta
+    </p>
   </div>
 </template>
 
@@ -41,27 +45,32 @@ onMounted(() => {
   const savedEndTime = localStorage.getItem('countdownEndTime')
   
   if (savedEndTime) {
-    const remainingTime = new Date(savedEndTime) - new Date()
-    
-    if (remainingTime > 0) {
-      startCountdown(remainingTime)
-    } else {
+    const remainingTime = new Date(savedEndTime).getTime() - new Date().getTime()
+
+    // Si ya ha pasado el tiempo, marcar como expirado
+    if (remainingTime <= 0) {
       isExpired.value = true
+    } else {
+      // Si todavía hay tiempo restante, iniciar el contador
+      startCountdown(remainingTime)
     }
   } else {
+    // Si no hay tiempo guardado, iniciar un nuevo contador de 24 horas
     resetCountdown()
   }
 })
 
 function resetCountdown() {
   const endTime = new Date().getTime() + countDownDuration
-  localStorage.setItem('countdownEndTime', new Date(endTime))
+  localStorage.setItem('countdownEndTime', new Date(endTime).toISOString()) // Guardamos en formato ISO string
   startCountdown(countDownDuration)
 }
 
 function startCountdown(duration) {
   countdownTimer = setInterval(() => {
-    const timeLeft = duration - (new Date().getTime() - new Date(localStorage.getItem('countdownEndTime')).getTime())
+    const currentTime = new Date().getTime()
+    const endTime = new Date(localStorage.getItem('countdownEndTime')).getTime()
+    const timeLeft = endTime - currentTime
 
     if (timeLeft <= 0) {
       clearInterval(countdownTimer)

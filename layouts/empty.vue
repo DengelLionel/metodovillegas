@@ -9,7 +9,7 @@
 
 <style scoped>
 .fondotelomereces {
-  background-image: url('/images/fondometodo.webp');
+  background-image: url('/images/fondometod.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
