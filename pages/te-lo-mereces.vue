@@ -11,7 +11,7 @@ una vida plena, llena de abundancia, amor y éxito sin esfuerzo.
 <img src="/images/ventana2.webp" class="w-[70%] md:w-[30%]" alt="Transforma tu vida">
       </div>
       
-      <h2 class="text-titulo text-lg text-center lg:text-[2.2rem]">Que aprenderas:</h2>
+      <Subtitulo>Que aprenderas:</Subtitulo>
       <div class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] flex flex-col gap-[15px]">
       <p> <strong>Identificar y eliminar las creencias limitantes</strong> que están saboteando tu éxito.</p>  
       <p> <strong>Utilizar técnicas poderosas de visualización diaria</strong> para manifestar tus deseos
