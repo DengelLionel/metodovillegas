@@ -37,7 +37,7 @@ transformación hoy mismo.
     </p>
   </div>
 <div class="flex flex-row justify-center mt-[20px]">
-   <img class="w-[30%]" src="/images/ventana3.webp" alt="Oferta">
+   <img class="w-[60%] md:w-[30%]" src="/images/ventana3.webp" alt="Oferta">
 </div>
  
 </div>
