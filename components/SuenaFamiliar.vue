@@ -4,7 +4,7 @@
 
     <div class="contenedor-suenafamiliar">
         <div class="contenedor-textosf">
-                <Subtitulo>¿Te suena familiar?</Subtitulo>
+         
                 <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] "><strong> Te esfuerzas día tras día, pero nunca logras el éxito que deseas.
 </strong></p>
                   <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] "><strong>Atraes relaciones tóxicas y te preguntas por qué la felicidad parece estar fuera
@@ -12,7 +12,7 @@ de tu alcance.</strong></p>
                     <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] "><strong>Por más que intentes ahorrar, el dinero nunca es suficiente, y la abundancia
 parece algo imposible.</strong></p>
              </div>
-<img class="w-full h-auto lg:w-[50%]" src="/images/te-lo-mereces1.webp" alt="Te lo mereces">
+<!-- <img class="w-full h-auto lg:w-[50%]" src="/images/te-lo-mereces1.webp" alt="Te lo mereces"> -->
     </div>
 
     <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] "> 

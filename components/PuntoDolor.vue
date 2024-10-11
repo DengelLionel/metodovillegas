@@ -1,8 +1,8 @@
 <template>
      <div class="contenedor-puntodolor">
-        <img class="w-full h-auto" src="/images/te-lo-mereces2.webp" alt="Te lo mereces">
+       <!--  <img class="w-full h-auto" src="/images/te-lo-mereces2.webp" alt="Te lo mereces"> -->
         <div class="contenedor-textos">
-         <Subtitulo class="text-titulo text-lg text-center lg:text-[2.2rem]">Puntos de Dolor </Subtitulo>
+       
    <p class="text-lg lg:text-xl text-center text-white  tracking-[0.06em] ">
           ¿Sientes que, por más que lo intentas, no logras vivir la vida que siempre has deseado? 
           ¿Estás
@@ -15,7 +15,7 @@ cansado/a de trabajar sin ver resultados y de sentir que algo te bloquea constan
 abundancia que siempre has deseado?
             </strong>  
         </p>
-        <Subtitulo>Problemas Actuales</Subtitulo>
+    
         <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] ">
             Hoy en día, es probable que te sientas atrapado/a en una vida llena de limitaciones,
 bloqueos mentales y emociones negativas que te mantienen alejado/a de la vida que

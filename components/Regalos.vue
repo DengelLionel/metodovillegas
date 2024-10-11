@@ -1,5 +1,9 @@
 <template>
 <div class="contenedor-general-regalos">
+ <p class="text-xl lg:text-2xl text-left text-white  tracking-[0.06em] "> Y ESO NO ES NADA! Tambien para crecer tu
+experiencia te doy estos 3 regalos especiales
+para ti! : aqui esta pequeña lista 
+mencionando esto:  </p>  
  <div class="contenedorcuadro-regalos">
     <div>
   <h3 class="text-titulo text-xl text-left lg:text-[2.1rem]">REGALO #1</h3>
@@ -34,6 +38,14 @@ abundancia, superación y transformación, usando simples secuencias numéricas
       
 <img src="/images/regalo3.webp" class="w-[250px]" alt="regalo 3">
     </div>
+
+    <h2 class="text-center text-3xl leading-normal  lg:text-[3rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">No dejes pasar esta oportunidad única. Transforma tu vida en solo 21 días, accede a
+tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
+<div class="flex flex-col justify-center  mt-[80px] mb-[80px]">
+<ButtonVillegas>
+    Compra ahora por solo $14 y accede a la vida de tus sueños.
+</ButtonVillegas>
+</div>
 </div>
    
     

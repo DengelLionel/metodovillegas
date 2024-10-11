@@ -2,11 +2,14 @@
 
 <!--     <HeroSection /> -->
     <section class="mt-10 md:px-16">
-      <h1 class="text-center text-3xl leading-normal  lg:text-[3rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días </h1>
+      <h1 class="text-center text-3xl leading-normal  lg:text-[2.5rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días </h1>
       <p class="text-lg lg:text-2xl text-center mb-10 text-white tracking-[0.06em]">
      Transforma tu vida en menos de un mes con técnicas universales probadas que te llevarán a vivir
 una vida plena, llena de abundancia, amor y éxito sin esfuerzo.
       </p>
+      <div class="flex flex-row justify-center align-center mb-[20px]">
+<img src="/images/ventana2.webp" class="w-[30%]" alt="Transforma tu vida">
+      </div>
       
       <h2 class="text-titulo text-lg text-center lg:text-[2.2rem]">Que aprenderas:</h2>
       <div class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] flex flex-col gap-[15px]">

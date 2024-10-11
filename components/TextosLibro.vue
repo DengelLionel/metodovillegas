@@ -1,5 +1,6 @@
 <template>
-  <div class="contenedor-oferta-contador mb-[80px] flex flex-col justify-center p-6 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl shadow-lg">
+<div class="mb-[80px] flex flex-col justify-center">
+ <div class="contenedor-oferta-contador  flex flex-col justify-center p-6 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl shadow-lg">
     <h3 class="text-lg lg:text-2xl text-center text-white tracking-[0.06em] mb-6">
       Esta oferta acabará en: 
     </h3>
@@ -18,7 +19,14 @@
         <p class="text-4xl lg:text-6xl font-bold text-yellow-400">{{ seconds }}</p>
         <span class="text-white text-sm lg:text-lg">Segundos</span>
       </div>
-    </div>
+    </div> 
+
+    <p class="text-lg lg:text-xl text-center text-white  tracking-[0.06em] mb-10 " v-if="!isExpired">
+      El cambio que deseas está a solo un paso. No
+esperes más para manifestar la vida que
+mereces. Compra ahora y comienza tu
+transformación hoy mismo.
+    </p>
 
     <ButtonVillegas v-if="!isExpired"> 
       ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
@@ -28,6 +36,12 @@
       Se acabó la oferta
     </p>
   </div>
+<div class="flex flex-row justify-center mt-[20px]">
+   <img class="w-[30%]" src="/images/ventana3.webp" alt="Oferta">
+</div>
+ 
+</div>
+ 
 </template>
 
 <script setup>

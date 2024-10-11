@@ -1,9 +1,12 @@
 <template>
     <div class="mt-[80px]">
         <Subtitulo>
-            La Historia Personal del Sabio
+        La Historia Personal de la sabia
+Abuela
         </Subtitulo>
-        <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">
+        <div class="flex flex-col gap-[25px] md:flex-row mt-[80px]">
+            <div>
+ <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">
             Hace años, también me encontraba en esa misma posición: frustrado, sintiéndome atrapado
 en una vida que no reflejaba mis verdaderos deseos. Pero después de décadas de estudio y
 aplicación de los principios universales, descubrí los secretos para manifestar la vida que
@@ -14,9 +17,17 @@ siempre había soñado. Y ahora quiero compartirlos contigo.
             <strong>Yo he recorrido ese camino, y puedo asegurarte que la abundancia, el éxito y la
 felicidad están a tu alcance.</strong>
         </p>
+            </div>
+       <img src="/images/ventana.webp" width="w-[30%]" alt="La Historia Personal de la sabia Abuela">
+        </div>
+       
         <div class="">
+          
+<div class="contenedor-bonos-guias">
+      <p class="text-xl lg:text-2xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">Recibiras estos Bonus exclusivos que te van acompañar a equipar tu
+mente y tomar accion durante los primeros 21 dias de manifestación</p>
 
-         <div class="contenedor-bonos-guias">
+         <div class="contenedor-bonos-guias-grid">
             <div class="guia-cuadro-bonoguias">
 <p class="text-lg lg:text-xl text-left text-white  tracking-[0.06em] w-full">
                 Guia de manifestación por 21 dias
@@ -43,7 +54,7 @@ mentalidad y aprender desde la gratitud, la calma y fluir.
 
         </p>
             </div>
- 
+ </div>
 
 
         <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">“El universo sintiendo que estas aplicando estos ejercicios te estas poniendo listo para
@@ -55,13 +66,7 @@ después de seguir los pasos, te devolvemos el 100% de tu dinero, sin preguntas.
 </p>
 <h3 class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">Y soporte 24/7 </h3>
 
-<h2 class="text-center text-3xl leading-normal  lg:text-[3rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">No dejes pasar esta oportunidad única. Transforma tu vida en solo 21 días, accede a
-tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
-<div class="flex flex-col justify-center  mt-[80px] mb-[80px]">
-<ButtonVillegas>
-    Compra ahora por solo $14 y accede a la vida de tus sueños.
-</ButtonVillegas>
-</div>
+
 
 
 
@@ -75,14 +80,18 @@ tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
 <style scoped>
 @media (min-width: 240px) and (max-width: 768px) {
     .contenedor-bonos-guias{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+       
+       
         margin-top: 80px;
         margin-bottom: 80px;
         background-color: rgba(0,0,0,0.8);
         padding:16px;
     }
+     .contenedor-bonos-guias-grid{
+ display: flex;
+        flex-direction: column;
+         gap: 10px;
+     }
     .guia-cuadro-bonoguias{
         display: flex;
         flex-direction: column;
@@ -100,13 +109,16 @@ tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
         align-items: start;
     }
     .contenedor-bonos-guias{
-        display:grid;
-        grid-template-columns:repeat(2, 1fr);
-        gap: 20px;
+     
          margin-top: 80px;
         margin-bottom: 80px;
          background-color: rgba(0,0,0,0.8);
         padding:20px;
     }
+       .contenedor-bonos-guias-grid{
+   display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 20px;
+       }
 }
 </style>
