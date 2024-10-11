@@ -1,5 +1,5 @@
 <template>
-  <div class="faq-container max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
+  <div class="fondofaq faq-container max-w-3xl mx-auto p-6 rounded-lg shadow-md">
     <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Preguntas Frecuentes</h2>
     <div v-for="(faq, index) in faqs" :key="index" class="mb-4 border-b last:border-none">
       <button @click="toggle(index)" class="w-full text-left flex justify-between items-center py-4">
@@ -57,5 +57,8 @@ const toggle = (index) => {
 }
 .faq-enter-from, .faq-leave-to {
   opacity: 0;
+}
+.fondofaq{
+  background-color: rgba(255,255,255,0.82);
 }
 </style>
