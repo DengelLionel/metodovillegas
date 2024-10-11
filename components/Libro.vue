@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <h2 class="text-titulo text-lg text-center lg:text-[2.2rem]">
+    <div class="mt-[80px]">
+        <Subtitulo>
             La Historia Personal del Sabio
-        </h2>
+        </Subtitulo>
         <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">
             Hace años, también me encontraba en esa misma posición: frustrado, sintiéndome atrapado
 en una vida que no reflejaba mis verdaderos deseos. Pero después de décadas de estudio y
