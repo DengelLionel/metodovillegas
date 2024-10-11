@@ -6,7 +6,7 @@ Abuela
         </Subtitulo>
         <div class="flex flex-col gap-[25px] md:flex-row mt-[80px]">
             <div>
- <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">
+ <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] ">
             Hace años, también me encontraba en esa misma posición: frustrado, sintiéndome atrapado
 en una vida que no reflejaba mis verdaderos deseos. Pero después de décadas de estudio y
 aplicación de los principios universales, descubrí los secretos para manifestar la vida que
