@@ -1,43 +1,39 @@
 <template>
+  <!--     <HeroSection /> -->
+  <section class="mt-10 md:px-16">
+    <h1 class="text-center text-3xl leading-normal lg:text-[2.5rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">
+      Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días
+    </h1>
+    <p class="text-lg lg:text-2xl text-center mb-10 text-white tracking-[0.06em]">
+      Transforma tu vida en menos de un mes con técnicas universales probadas que te llevarán a vivir
+      una vida plena, llena de abundancia, amor y éxito sin esfuerzo.
+    </p>
+    <div class="flex flex-row justify-center align-center mb-[20px]">
+      <img src="/images/ventana2.webp" class="w-[70%] md:w-[30%]" alt="Transforma tu vida">
+    </div>
 
-<!--     <HeroSection /> -->
-    <section class="mt-10 md:px-16">
-      <h1 class="text-center text-3xl leading-normal  lg:text-[2.5rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días </h1>
-      <p class="text-lg lg:text-2xl text-center mb-10 text-white tracking-[0.06em]">
-     Transforma tu vida en menos de un mes con técnicas universales probadas que te llevarán a vivir
-una vida plena, llena de abundancia, amor y éxito sin esfuerzo.
-      </p>
-      <div class="flex flex-row justify-center align-center mb-[20px]">
-<img src="/images/ventana2.webp" class="w-[70%] md:w-[30%]" alt="Transforma tu vida">
-      </div>
-      
-      <Subtitulo>Que aprenderas:</Subtitulo>
-      <div class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] flex flex-col gap-[15px]">
-      <p> <strong>Identificar y eliminar las creencias limitantes</strong> que están saboteando tu éxito.</p>  
-      <p> <strong>Utilizar técnicas poderosas de visualización diaria</strong> para manifestar tus deseos
-más profundos.</p>
-<p> <strong>Alinear tus emociones con tus metas,</strong> para que el universo trabaje a tu favor.</p>
+    <Subtitulo>Que aprenderás:</Subtitulo>
+    <div class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] flex flex-col gap-[15px]">
+      <p><strong>Identificar y eliminar las creencias limitantes</strong> que están saboteando tu éxito.</p>
+      <p><strong>Utilizar técnicas poderosas de visualización diaria</strong> para manifestar tus deseos más profundos.</p>
+      <p><strong>Alinear tus emociones con tus metas,</strong> para que el universo trabaje a tu favor.</p>
+    </div>
 
-
-      </div>
-     <PuntoDolor/>
-     <SuenaFamiliar/>
-     <TestimoniosLanding/>
-     <Libro/>
-     <Regalos/>
-     <Bonus/>
-     <TextosLibro/>
-     <Faqs/>
-       <PieLanding/>
-      <NuxtPage />
-    </section>
-
+    <PuntoDolor />
+    <SuenaFamiliar />
+    <TestimoniosLanding />
+    <Libro />
+    <Regalos />
+    <Bonus />
+    <TextosLibro />
+    <Faqs />
+    <PieLanding />
+    <Wsp/>
+    <NuxtPage />
+  </section>
 </template>
 
 <script setup>
-// Importar los componentes que necesitas
-/* import HeroSection from '~/components/HeroSection.vue' */
-
 import PuntoDolor from '~/components/PuntoDolor.vue'
 import SuenaFamiliar from '~/components/SuenaFamiliar.vue'
 import TestimoniosLanding from '~/components/TestimoniosLanding.vue'
@@ -45,14 +41,61 @@ import Libro from '~/components/Libro.vue'
 import Faqs from '~/components/Faqs.vue'
 import TextosLibro from '~/components/TextosLibro.vue'
 import Bonus from '~/components/Bonus.vue'
-import Regalos from  '~/components/Regalos.vue'
+import Regalos from '~/components/Regalos.vue'
 import PieLanding from '~/components/PieLanding.vue'
+
 // Asignar el layout vacío para esta página
 definePageMeta({
-  layout: 'empty'
+  layout: 'empty',
+  head() {
+    return {
+      title: 'Merezco la Vida de Mis Sueños - Manifestación y Éxito en Solo 21 Días',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Transforma tu vida en menos de un mes con técnicas universales que te llevarán a vivir una vida plena, llena de abundancia, amor y éxito sin esfuerzo.'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'manifestación, abundancia, éxito, ley de atracción, transformación personal, creencias limitantes, visualización'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Merezco la Vida de Mis Sueños - Manifestación y Éxito en Solo 21 Días'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Aprende cómo eliminar bloqueos mentales, atraer abundancia y vivir con éxito en solo 21 días con técnicas probadas de manifestación.'
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: '/images/ventana3.webp' // Cambia a la URL de tu imagen
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://metodovillegas.com/manifestacion'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        }
+      ],
+      link: [
+        { rel: 'me', href: 'https://www.instagram.com/equipartumente' }, // Perfil de Instagram
+        { rel: 'me', href: 'https://www.tiktok.com/@equipartumente360?_t=8qT8zr63Kqs&_r=1' }    // Perfil de TikTok
+      ]
+    }
+  }
 })
 </script>
+
 <style scoped>
 
 </style>
-

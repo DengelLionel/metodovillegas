@@ -18,7 +18,7 @@
             <a class="text-gray-400 hover:text-white cursor-pointer">CURSOS</a>
           </li>
           <li>
-            <a class="text-gray-400 hover:text-white cursor-pointer">TE LO MERECES</a>
+            <a href="/manifestacion" class="text-gray-400 hover:text-white cursor-pointer">MANIFESTACIÓN</a>
           </li>
           <li>
             <a class="text-gray-400 hover:text-white cursor-pointer">¿QUIÉNES SOMOS?</a>
