@@ -7,15 +7,23 @@ Abuela
         <div class="flex flex-col gap-[25px] md:flex-row justify-center align-center">
             <div>
  <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] ">
-            Hace años, también me encontraba en esa misma posición: frustrado, sintiéndome atrapado
-en una vida que no reflejaba mis verdaderos deseos. Pero después de décadas de estudio y
-aplicación de los principios universales, descubrí los secretos para manifestar la vida que
-siempre había soñado. Y ahora quiero compartirlos contigo.
+        Hace años, también me encontraba
+en esa misma posición: frustrada,
+sintiéndome atrapadaa en una vida
+que no reflejaba mis verdaderos
+deseos. Pero después de décadas de
+estudio y aplicación de los principios
+universales, descubrí los secretos
+para manifestar la vida que siempre
+había soñado. Y ahora quiero
+compartirlos contigo mi niña y mi
+niño.  
 
         </p>
         <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">
-            <strong>Yo he recorrido ese camino, y puedo asegurarte que la abundancia, el éxito y la
-felicidad están a tu alcance.</strong>
+            <strong>Yo he recorrido ese camino, y puedo
+asegurarte que la abundancia, el
+éxito y la felicidad están a tu alcance.</strong>
         </p>
             </div>
             <div class="flex flex-row justify-center align-center">
@@ -56,8 +64,6 @@ tomar acción
  </div>
 
 
-        <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">“El universo sintiendo que estas aplicando estos ejercicios te estas poniendo listo para
-manifestar la universo lo que desees”</p>
 <p class="text-lg lg:text-xl text-center mb-10 text-white mt-10 tracking-[0.06em] ">
     Estamos tan seguros de que este libro
 transformará tu vida que te ofrecemos una <strong> garantía de devolución de 7 días.</strong> Si no ves resultados
