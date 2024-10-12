@@ -12,7 +12,7 @@ que te conectará con tu poder interior, haciendo que cada día sea una
 oportunidad para manifestar lo que más deseas.</p>
     </div>
       
-<img src="/images/libro2.webp" class="w-[250px]" alt="regalo 1">
+<img src="/images/te-lo-mereces2.webp" class="w-[250px]" alt="regalo 1">
     </div>
 
     <div class="contenedorcuadro-regalos">
@@ -24,7 +24,7 @@ vida y cómo utilizarlos para transformar tu realidad y manifestar tus sueños m
 profundos.</p>
         </div>
        
-<img src="/images/libro4.webp" class="w-[250px]" alt="regalo 2">
+<img src="/images/te-lo-mereces1.webp" class="w-[250px]" alt="regalo 2">
     </div>
         <div class="contenedorcuadro-regalos">
             <div>
@@ -35,7 +35,7 @@ abundancia, superación y transformación, usando simples secuencias numéricas
 </p>
             </div>
       
-<img src="/images/regalo3.webp" class="w-[250px]" alt="regalo 3">
+<img src="/images/regalo333.webp" class="w-[250px]" alt="regalo 3">
     </div>
 
     <h2 class="text-center text-3xl leading-normal  lg:text-[3rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">No dejes pasar esta oportunidad única. Transforma tu vida en solo 21 días, accede a

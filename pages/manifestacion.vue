@@ -23,6 +23,7 @@
     <SuenaFamiliar />
     <TestimoniosLanding />
     <Libro />
+    <Video/>
     <Regalos />
     <Bonus />
     <TextosLibro />
@@ -43,7 +44,7 @@ import TextosLibro from '~/components/TextosLibro.vue'
 import Bonus from '~/components/Bonus.vue'
 import Regalos from '~/components/Regalos.vue'
 import PieLanding from '~/components/PieLanding.vue'
-
+import Video from '~/components/Video.vue'
 // Asignar el layout vacío para esta página
 definePageMeta({
   layout: 'empty',
