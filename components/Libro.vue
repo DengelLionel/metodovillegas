@@ -110,7 +110,7 @@ después de seguir los pasos, te devolvemos el 100% de tu dinero, sin preguntas.
 }
 @media (min-width: 769px){
       .imagenventana{
-        width: 250px;
+        min-width: 250px;
     }
       .guia-cuadro-bonoguias{
         display: flex;
