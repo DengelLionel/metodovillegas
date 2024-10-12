@@ -4,7 +4,7 @@
         La Historia Personal de la sabia
 Abuela
         </Subtitulo>
-        <div class="flex flex-col gap-[25px] md:flex-row mt-[80px]">
+        <div class="flex flex-col gap-[25px] md:flex-row justify-center align-center">
             <div>
  <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] ">
             Hace años, también me encontraba en esa misma posición: frustrado, sintiéndome atrapado
@@ -18,7 +18,10 @@ siempre había soñado. Y ahora quiero compartirlos contigo.
 felicidad están a tu alcance.</strong>
         </p>
             </div>
-       <img src="/images/ventana.webp" width="w-[30%]" alt="La Historia Personal de la sabia Abuela">
+            <div class="flex flex-row justify-center align-center">
+   <img src="/images/ventana.webp" class="imagenventana" alt="La Historia Personal de la sabia Abuela">
+            </div>
+    
         </div>
        
         <div class="">
@@ -30,29 +33,25 @@ mente y tomar accion durante los primeros 21 dias de manifestación</p>
          <div class="contenedor-bonos-guias-grid">
             <div class="guia-cuadro-bonoguias">
 <p class="text-lg lg:text-xl text-left text-white  tracking-[0.06em] w-full">
-                Guia de manifestación por 21 dias
+              Guia de manifestación por 21
+dias Prepara tu mente para lo
+que se viene
         </p>
         <img class="w-[50%]" src="/images/guia1.webp" alt="Guia">
             </div>
     <div  class="guia-cuadro-bonoguias">
   <p class="text-lg lg:text-xl text-left text-white  tracking-[0.06em] w-full">
-            Guia paso a paso para empoderar tu potencial, esto significa que el cliente va aprender a
-tener claridad mental y poder visualizar mejor sus objetivos en la vida, para así empezar a
-tomar acción.
+          Guia paso a paso para
+empoderar tu potencial, (Listo
+para tomar acción)  Vas a
+visualizar con claridad tus
+metas en la vida y así vas a
+tomar acción 
         </p>
          <img class="w-[50%]" src="/images/libro1.webp" alt="Guia">
     </div>
       
-        <p class="text-lg lg:text-xl text-left text-white tracking-[0.06em] w-full">
-            Guia de creencias limitantes que te van ayudar a identificar tus bloqueos mentales
-
-        </p>
-        <p class="text-lg lg:text-xl text-left text-white tracking-[0.06em] w-full">
-            Diario de gratitud. Esto te va ayudar a estar presente mas consciente por la vida y agradecer
-todo lo que te rodea independientemente de tu realidad para así empezar a cambiar tu
-mentalidad y aprender desde la gratitud, la calma y fluir.
-
-        </p>
+      
             </div>
  </div>
 
@@ -79,6 +78,9 @@ después de seguir los pasos, te devolvemos el 100% de tu dinero, sin preguntas.
 
 <style scoped>
 @media (min-width: 240px) and (max-width: 768px) {
+    .imagenventana{
+        width: 200px;
+    }
     .contenedor-bonos-guias{
        
        
@@ -101,6 +103,9 @@ después de seguir los pasos, te devolvemos el 100% de tu dinero, sin preguntas.
     }
 }
 @media (min-width: 769px){
+      .imagenventana{
+        width: 250px;
+    }
       .guia-cuadro-bonoguias{
         display: flex;
         flex-direction: column;
