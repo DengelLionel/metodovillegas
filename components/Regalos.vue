@@ -2,8 +2,7 @@
 <div class="contenedor-general-regalos">
  <p class="text-xl lg:text-2xl text-left text-white  tracking-[0.06em] "> Y ESO NO ES NADA! Tambien para crecer tu
 experiencia te doy estos 3 regalos especiales
-para ti! : aqui esta pequeña lista 
-mencionando esto:  </p>  
+para ti! </p>  
  <div class="contenedorcuadro-regalos">
     <div>
   <h3 class="text-titulo text-xl text-left lg:text-[2.1rem]">REGALO #1</h3>

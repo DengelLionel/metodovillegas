@@ -1,5 +1,8 @@
 <template>
 <div class="mb-[80px] flex flex-col justify-center">
+    <ButtonVillegas v-if="isExpired"> 
+      ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
+    </ButtonVillegas>
  <div class="contenedor-oferta-contador  flex flex-col justify-center p-6 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl shadow-lg">
     <h3 class="text-lg lg:text-2xl text-center text-white tracking-[0.06em] mb-6">
       Esta oferta acabará en: 
