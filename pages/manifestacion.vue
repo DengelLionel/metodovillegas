@@ -110,8 +110,17 @@ definePageMeta({
           charset: 'utf-8'
         }
       ],
+      noscript: [
+        {
+          hid: 'facebook-pixel-noscript',
+          innerHTML: `<img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1298547537801212&ev=PageView&noscript=1"/>`,
+          body: true
+        }
+      ],
       __dangerouslyDisableSanitizersByTagID: {
-        'facebook-pixel': ['innerHTML']
+        'facebook-pixel': ['innerHTML'],
+        'facebook-pixel-noscript': ['innerHTML']
       }
     }
   }
