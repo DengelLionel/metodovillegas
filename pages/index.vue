@@ -6,9 +6,9 @@
     <section class=" bg-main text-white py-20 pl-20 pr-20 text-center">
       <h1 class="text-5xl font-bold mb-4 text-titulo">Bienvenido a Métodos Villegas</h1>
       <p class="text-lg mb-6">Tenemos muchos cursos para ti y para toda tu familia</p>
-     <ButtonVillegas type="button">
+     <ButtonInicio type="button">
         Aprende más
-      </ButtonVillegas> 
+      </ButtonInicio> 
     </section>
     <!-- Puedes añadir más secciones aquí -->
   </div>

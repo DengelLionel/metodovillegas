@@ -2,7 +2,7 @@
   <button
     :type="type"
     @click="handleClick"
-    class="bg-boton border-[1.5px] rounded-full border-boton tracking-[0.09em] hover:text-primary text-primary font-bold py-3 px-8 transition-transform duration-300 ease-in-out text-xl shadow-button animate-button glowing-button"
+    class="bg-boton border-[1.5px] rounded-full border-boton tracking-[0.09em] hover:text-primary text-primary font-semibold py-3 px-8 transition-transform duration-300 ease-in-out text-xl shadow-button animate-button glowing-button"
   >
     <slot>Botón</slot>
   </button>
@@ -21,15 +21,7 @@ const props = defineProps({
   },
 });
 
-// Función que maneja el clic
-const handleClick = () => {
-  if (props.url) {
-    if (typeof window.fbq !== 'undefined') {
-      window.fbq('track', 'InitiateCheckout');  // Evento de "Iniciar Pago"
-    }
-    window.open(props.url, '_blank');
-  }
-};
+
 </script>
 
 <style scoped>
