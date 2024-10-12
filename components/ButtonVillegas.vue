@@ -9,6 +9,7 @@
 </template>
 
 <script setup>
+// Definir las propiedades del componente
 const props = defineProps({
   type: {
     type: String,
@@ -20,14 +21,24 @@ const props = defineProps({
   },
 });
 
-// Función que maneja el clic y rastrea el evento con Facebook Pixel
+// Función que maneja el clic
 const handleClick = () => {
+  // Verificar si se está recibiendo la URL
+  console.log('URL recibida:', props.url);
+
   if (props.url) {
     // Rastrear el evento de inicio de pago en Facebook Pixel
-    window.fbq('track', 'InitiateCheckout');  // Evento de "Iniciar Pago"
-    
+    if (typeof window.fbq !== 'undefined') {
+      window.fbq('track', 'InitiateCheckout');  // Evento de "Iniciar Pago"
+      console.log('Evento de Facebook Pixel disparado');
+    } else {
+      console.log('Facebook Pixel no está definido');
+    }
+
     // Redirigir a la URL en una nueva pestaña
     window.open(props.url, '_blank');
+  } else {
+    console.log('No se proporcionó ninguna URL');
   }
 };
 </script>
