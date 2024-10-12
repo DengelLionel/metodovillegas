@@ -20,10 +20,14 @@ const props = defineProps({
   },
 });
 
-// Función que maneja el clic
+// Función que maneja el clic y rastrea el evento con Facebook Pixel
 const handleClick = () => {
   if (props.url) {
-    window.open(props.url, '_blank');  // Abre la URL en una nueva pestaña
+    // Rastrear el evento de inicio de pago en Facebook Pixel
+    window.fbq('track', 'InitiateCheckout');  // Evento de "Iniciar Pago"
+    
+    // Redirigir a la URL en una nueva pestaña
+    window.open(props.url, '_blank');
   }
 };
 </script>

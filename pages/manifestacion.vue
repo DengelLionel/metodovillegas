@@ -1,5 +1,4 @@
 <template>
-  <!--     <HeroSection /> -->
   <section class="mt-10 md:px-16">
     <h1 class="text-center text-3xl leading-normal lg:text-[2.5rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">
       Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días
@@ -45,7 +44,7 @@ import Bonus from '~/components/Bonus.vue'
 import Regalos from '~/components/Regalos.vue'
 import PieLanding from '~/components/PieLanding.vue'
 import Video from '~/components/Video.vue'
-// Asignar el layout vacío para esta página
+
 definePageMeta({
   layout: 'empty',
   head() {
@@ -91,12 +90,32 @@ definePageMeta({
       link: [
         { rel: 'me', href: 'https://www.instagram.com/equipartumente' }, // Perfil de Instagram
         { rel: 'me', href: 'https://www.tiktok.com/@equipartumente360?_t=8qT8zr63Kqs&_r=1' }    // Perfil de TikTok
-      ]
+      ],
+      script: [
+        {
+          hid: 'facebook-pixel',
+          innerHTML: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1622502308612732'); 
+            fbq('track', 'PageView');
+          `,
+          type: 'text/javascript',
+          charset: 'utf-8'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
     }
   }
 })
 </script>
 
 <style scoped>
-
+/* Estilos personalizados aquí */
 </style>
