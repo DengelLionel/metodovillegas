@@ -12,16 +12,16 @@
       <div class="w-full px-4 lg:justify-center lg:align-center">
         <nav class="list-none mb-10 flex flex-col gap-[15px] lg:flex-row lg:gap-[20px] lg:justify-center lg:align-center">
           <li>
-            <a class="text-gray-400 hover:text-white cursor-pointer">INICIO</a>
+            <a href="/" class="text-gray-400 hover:text-white cursor-pointer">INICIO</a>
           </li>
           <li>
-            <a class="text-gray-400 hover:text-white cursor-pointer">CURSOS</a>
+            <a  @click.prevent="scrollToSection('cursos')" href="#" class="text-gray-400 hover:text-white cursor-pointer">CURSOS</a>
           </li>
           <li>
             <a href="/manifestacion" class="text-gray-400 hover:text-white cursor-pointer">MANIFESTACIÓN</a>
           </li>
           <li>
-            <a class="text-gray-400 hover:text-white cursor-pointer">¿QUIÉNES SOMOS?</a>
+            <a  @click.prevent="scrollToSection('conocenos')" href="#" class="text-gray-400 hover:text-white cursor-pointer">CONOCENOS</a>
           </li>
         </nav>
       </div>
@@ -64,4 +64,8 @@
 </template>
 <script setup>
 const currentYear = new Date().getFullYear();
+import { useScrollToSection } from '~/composables/useScrollToSection';
+
+// Usar el composable para manejar el desplazamiento
+const { scrollToSection } = useScrollToSection();
 </script>

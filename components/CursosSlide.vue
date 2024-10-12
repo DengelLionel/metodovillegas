@@ -1,5 +1,9 @@
 <template>
-  <div class="relative container-swiper-slidder">
+<div >
+  <Subtitulo>
+    Cursos
+  </Subtitulo>
+<div id="cursos" class="mt-[20px] relative container-swiper-slidder">
 
     <!-- Swiper Slider -->
     <swiper
@@ -24,6 +28,8 @@
   
     </swiper>
   </div>
+</div>
+  
 </template>
 
 <script setup>

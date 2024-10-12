@@ -6,9 +6,9 @@
       <span class="ml-3 text-xl">Método Villegas</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white cursor-pointer">INICIO</a>
-       <a class="mr-5 hover:text-white cursor-pointer">CONOCENOS</a>
-      <a class="mr-5 hover:text-white cursor-pointer">CURSOS</a>
+      <a href="/" class="mr-5 hover:text-white cursor-pointer">INICIO</a>
+       <a  @click.prevent="scrollToSection('conocenos')" href="#" class="mr-5 hover:text-white cursor-pointer">CONÓCENOS</a>
+      <a  @click.prevent="scrollToSection('cursos')" href="#" class="mr-5 hover:text-white cursor-pointer">CURSOS</a>
       <a class="mr-5 hover:text-white cursor-pointer" href="/manifestacion" target="_blank">MANIFESTACIÓN</a>
    
     </nav>
@@ -20,3 +20,9 @@
   </div>
 </div>
 </template>
+<script setup>
+import { useScrollToSection } from '~/composables/useScrollToSection';
+
+// Usar el composable para manejar el desplazamiento
+const { scrollToSection } = useScrollToSection();
+</script>

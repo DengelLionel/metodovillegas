@@ -1,27 +1,30 @@
 <template>
-  <button
-    :type="type"
-    @click="handleClick"
-    class="bg-boton border-[1.5px] rounded-full border-boton tracking-[0.09em] hover:text-primary text-primary font-semibold py-3 px-8 transition-transform duration-300 ease-in-out text-xl shadow-button animate-button glowing-button"
+  <a
+    :id="id"
+    @click.prevent="scrollToSection(enviara)"
+    class="bg-boton cursor-pointer border-[1.5px] rounded-full border-boton tracking-[0.09em] hover:text-primary text-primary font-semibold py-3 px-8 transition-transform duration-300 ease-in-out text-xl shadow-button animate-button glowing-button"
   >
     <slot>Botón</slot>
-  </button>
+  </a>
 </template>
 
 <script setup>
 // Definir las propiedades del componente
 const props = defineProps({
-  type: {
+  id: {
     type: String,
-    default: 'button',  // Tipo de botón por defecto
+    default: null,  // El id es opcional
   },
-  url: {
+  enviara: {
     type: String,
-    default: null,  // La URL es opcional
-  },
+    default: null,  // El id de la sección a la que se desplazará
+  }
 });
 
+import { useScrollToSection } from '~/composables/useScrollToSection';
 
+// Usar el composable para manejar el desplazamiento
+const { scrollToSection } = useScrollToSection();
 </script>
 
 <style scoped>

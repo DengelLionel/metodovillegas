@@ -1,18 +1,46 @@
 <template>
-    <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Kickstarter Actually Pinterest Brunch Bitters Occupy</h2>
-    <div class="md:w-3/5 md:pl-6">
-      <p class="leading-relaxed text-base">Taxidermy bushwick celiac master cleanse microdosing seitan. Fashion axe four dollar toast truffaut, direct trade kombucha brunch williamsburg keffiyeh gastropub tousled squid meh taiyaki drinking vinegar tacos.</p>
-      <div class="flex md:mt-4 mt-6">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-        <a class="text-indigo-500 inline-flex items-center ml-4">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
+  <section id="conocenos" class="text-gray-600 body-font bodytransparente py-12">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <!-- Imagen de la sección "Conócenos" -->
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded shadow-lg" alt="team" src="https://via.placeholder.com/600x400">
+      </div>
+      <!-- Texto y detalles de la sección "Conócenos" -->
+      <div class="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-10 flex flex-col md:items-start md:text-left items-center text-center">
+        <h2 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-300">Conócenos Mejor</h2>
+        <p class="mb-8 leading-relaxed text-lg text-gray-400">En nuestra empresa, creemos en el poder de la innovación y la excelencia. Desde nuestros inicios, hemos trabajado incansablemente para ofrecer productos de la más alta calidad, construyendo relaciones de confianza y asegurando el éxito en cada proyecto que emprendemos.</p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Saber Más</button>
+          <a class="ml-4 inline-flex items-center text-yellow-500 font-semibold hover:text-yellow-600">
+            <span>Descubre más</span>
+            <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7m0 0l-7 7m7-7H6"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
+
+<style scoped>
+.bodytransparente{
+  background-color: rgba(10, 8, 1, 0.5);
+}
+/* Estilos adicionales para mejorar la presentación */
+.title-font {
+  font-family: 'Lato', sans-serif;
+}
+
+body-font {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Responsividad adicional para imágenes */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
