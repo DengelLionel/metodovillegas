@@ -42,7 +42,7 @@ abundancia, superación y transformación, usando simples secuencias numéricas
 tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
 <div class="flex flex-col justify-center">
 <ButtonVillegas url="https://go.hotmart.com/D95838351M?ap=86eb">
-    Compra ahora por solo $14 y accede a la vida de tus sueños.
+     Quiero acceder con 7 días de garantía
 </ButtonVillegas>
 </div>
 </div>

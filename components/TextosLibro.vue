@@ -2,7 +2,7 @@
 <div class=" flex flex-col justify-center">
   <div class="flex flex-row justify-center mb-[50px]">
 <ButtonVillegas url="https://go.hotmart.com/D95838351M?ap=86eb" v-if="isExpired"> 
-      ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
+       Quiero acceder con 7 días de garantía
     </ButtonVillegas>
   </div>
     
@@ -35,7 +35,7 @@ transformación hoy mismo.
     </p>
 
     <ButtonVillegas url="https://go.hotmart.com/D95838351M?ap=86eb" v-if="!isExpired"> 
-      ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
+       Quiero acceder con 7 días de garantía
     </ButtonVillegas>
     <!-- Mensaje cuando la oferta se acaba -->
     <p v-else class="text-3xl lg:text-4xl text-red-500 text-center font-semibold mt-4">

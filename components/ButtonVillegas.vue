@@ -2,7 +2,7 @@
   <button
     :type="type"
     @click="handleClick"
-    class="bg-transparent border-[1.5px] border-boton hover:bg-boton hover:text-primary text-white font-semibold py-3 px-8 transition-colors duration-300 ease-in-out"
+    class="bg-boton border-[1.5px] rounded-full border-boton hover:bg-boton tracking-[0.09em] hover:text-primary text-primary font-semibold py-3 px-8 transition-transform duration-300 ease-in-out text-xl shadow-button animate-button"
   >
     <slot>Botón</slot>
   </button>
@@ -42,3 +42,23 @@ const handleClick = () => {
   }
 };
 </script>
+<style scoped>
+/* Añadir sombra blanca al botón */
+.shadow-button {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.shadow-button:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Animación suave de escalado al hacer hover */
+.animate-button {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.animate-button:hover {
+  transform: scale(1.05); /* Escalado suave al pasar el mouse */
+}
+</style>
