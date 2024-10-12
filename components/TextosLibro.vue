@@ -1,6 +1,6 @@
 <template>
 <div class=" flex flex-col justify-center">
-  <div class="mt-[50px]">
+  <div class="flex flex-row justify-center mb-[50px]">
 <ButtonVillegas v-if="isExpired"> 
       ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
     </ButtonVillegas>
