@@ -74,7 +74,7 @@ definePageMeta({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: '/images/ventana3.webp'
+          content: 'https://metodovillegas.com/images/ventana3.webp'
         },
         {
           hid: 'og:url',
