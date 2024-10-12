@@ -42,7 +42,7 @@ transformación hoy mismo.
       Se acabó la oferta
     </p>
   </div>
-<div class="flex flex-row justify-center mt-[20px]">
+<div class="flex flex-row justify-center mt-[20px] mb-[80px]">
    <img class="w-[60%] md:w-[30%]" src="/images/ventana3.webp" alt="Oferta">
 </div>
  
