@@ -33,14 +33,14 @@ const handleClick = () => {
 </script>
 
 <style scoped>
-/* Sombra inicial con un toque dorado */
+/* Sombra inicial con efecto dorado opaco */
 .shadow-button {
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6); /* Luz dorada */
+  box-shadow: 0 4px 15px rgba(231, 179, 70, 0.5); /* Luz dorada opaca */
   text-transform: uppercase;
 }
 
 .shadow-button:hover {
-  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8); /* Luz dorada más intensa */
+  box-shadow: 0 6px 20px rgba(231, 179, 70, 0.7); /* Luz dorada opaca más intensa */
 }
 
 /* Animación suave de escalado al hacer hover */
@@ -52,9 +52,9 @@ const handleClick = () => {
   transform: scale(1.05); /* Escalado suave al pasar el mouse */
 }
 
-/* Añadir el efecto de brillo animado */
+/* Fondo dorado opaco con los tres colores */
 .glowing-button {
-  background: linear-gradient(45deg, #f9d423, #ff4e50);
+  background: linear-gradient(45deg, #e4b147, #a97a28, #e7b346); /* Gradiente dorado opaco */
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -67,13 +67,13 @@ const handleClick = () => {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.6), transparent 70%);
+  background: radial-gradient(circle, rgba(231, 179, 70, 0.4), transparent 70%);
   transform: rotate(45deg);
   animation: glow 2.5s infinite linear;
   z-index: -1;
 }
 
-/* Animación del brillo que recorre el botón */
+/* Animación del brillo dorado opaco */
 @keyframes glow {
   0% {
     transform: translateX(-200%) translateY(-200%);
