@@ -31,7 +31,7 @@ export default defineNuxtConfig({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window,document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1298547537801212');  // Reemplaza con tu Pixel ID real
+            fbq('init', '1622502308612732');  // Reemplaza con tu Pixel ID real
             fbq('track', 'PageView');
           `,
           type: 'text/javascript',
