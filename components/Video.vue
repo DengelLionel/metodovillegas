@@ -1,5 +1,10 @@
 <template>
-  <div class="video-container">
+<div>
+  <Subtitulo>
+    Merezco la vida de mis sueños
+    </Subtitulo>  
+
+     <div class="video-container">
     <video
       class="w-full h-full"
       controls
@@ -11,6 +16,8 @@
       Tu navegador no soporta el elemento de video.
     </video>
   </div>
+</div>
+ 
 </template>
 
 <script setup>

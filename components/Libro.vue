@@ -9,7 +9,7 @@ Abuela
  <p class="text-lg lg:text-xl text-center text-white tracking-[0.06em] ">
         Hace años, también me encontraba
 en esa misma posición: frustrada,
-sintiéndome atrapadaa en una vida
+sintiéndome atrapada en una vida
 que no reflejaba mis verdaderos
 deseos. Pero después de décadas de
 estudio y aplicación de los principios
