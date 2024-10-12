@@ -21,25 +21,31 @@
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-  height: 0;
+ 
+  height: auto;
+  margin: 20px 0;
 }
 
-.video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Media queries para mejorar el tamaño en dispositivos móviles */
-@media (max-width: 768px) {
-  .video-container {
-    padding-bottom: 75%; /* Ajusta la relación de aspecto para pantallas más pequeñas */
-  }
-
+/* En pantallas grandes, aplica position absolute */
+@media (min-width: 1024px) {
+    .video-container{
+         padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    }
   .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* En pantallas pequeñas, como móviles y tablets */
+@media (max-width: 1023px) {
+
+  
+  .video-container video {
+    position: static; /* Elimina absolute para móviles */
     width: 100%;
     height: auto;
   }
