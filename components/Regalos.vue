@@ -41,7 +41,7 @@ abundancia, superación y transformación, usando simples secuencias numéricas
     <h2 class="text-center text-3xl leading-normal  lg:text-[3rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">No dejes pasar esta oportunidad única. Transforma tu vida en solo 21 días, accede a
 tus bonos exclusivos y comienza a vivir la vida que siempre has deseado.</h2>
 <div class="flex flex-col justify-center">
-<ButtonVillegas>
+<ButtonVillegas url="https://go.hotmart.com/D95838351M?ap=86eb">
     Compra ahora por solo $14 y accede a la vida de tus sueños.
 </ButtonVillegas>
 </div>

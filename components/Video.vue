@@ -32,4 +32,16 @@
   width: 100%;
   height: 100%;
 }
+
+/* Media queries para mejorar el tamaño en dispositivos móviles */
+@media (max-width: 768px) {
+  .video-container {
+    padding-bottom: 75%; /* Ajusta la relación de aspecto para pantallas más pequeñas */
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>

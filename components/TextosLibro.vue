@@ -1,7 +1,7 @@
 <template>
 <div class=" flex flex-col justify-center">
   <div class="flex flex-row justify-center mb-[50px]">
-<ButtonVillegas v-if="isExpired"> 
+<ButtonVillegas url="https://go.hotmart.com/D95838351M?ap=86eb" v-if="isExpired"> 
       ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
     </ButtonVillegas>
   </div>
@@ -34,7 +34,7 @@ mereces. Compra ahora y comienza tu
 transformación hoy mismo.
     </p>
 
-    <ButtonVillegas v-if="!isExpired"> 
+    <ButtonVillegas url="https://go.hotmart.com/D95838351M?ap=86eb" v-if="!isExpired"> 
       ¡Compra Ahora y Manifiesta la Vida de Tus Sueños!
     </ButtonVillegas>
     <!-- Mensaje cuando la oferta se acaba -->
