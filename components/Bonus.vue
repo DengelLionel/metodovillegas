@@ -14,14 +14,14 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div v-for="(bono, index) in bonos" :key="index" class="p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
         <h3 class="text-lg lg:text-xl font-semibold mb-3">{{ bono.titulo }}</h3>
-        <p class="text-yellow-400 text-xl font-bold mb-2">{{ bono.precio }}</p>
+        <p class="text-yellow-400 text-xl font-bold mb-2 line-through">{{ bono.precio }}</p>
         <p class="text-sm lg:text-base">{{ bono.descripcion }}</p>
       </div>
     </div>
 
     <!-- Valor Total y Precio Actual -->
     <div class="mt-10 text-center">
-      <h2 class="text-2xl lg:text-3xl font-semibold mb-3">Valor Total: <span class="text-yellow-300">$110</span></h2>
+      <h2 class="text-2xl lg:text-3xl font-semibold mb-3">Valor Total: <span class="text-yellow-300 line-through">$110</span></h2>
       <h2 class="text-2xl lg:text-3xl font-semibold mb-3">Precio Actual: <span class="text-green-400">$14</span></h2>
     </div>
   </div>
