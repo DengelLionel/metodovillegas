@@ -74,7 +74,7 @@ definePageMeta({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: '/images/ventana3.webp' // Cambia a la URL de tu imagen
+          content: '/images/ventana3.webp'
         },
         {
           hid: 'og:url',
@@ -88,8 +88,8 @@ definePageMeta({
         }
       ],
       link: [
-        { rel: 'me', href: 'https://www.instagram.com/equipartumente' }, // Perfil de Instagram
-        { rel: 'me', href: 'https://www.tiktok.com/@equipartumente360?_t=8qT8zr63Kqs&_r=1' }    // Perfil de TikTok
+        { rel: 'me', href: 'https://www.instagram.com/equipartumente' },
+        { rel: 'me', href: 'https://www.tiktok.com/@equipartumente360?_t=8qT8zr63Kqs&_r=1' }
       ],
       script: [
         {
@@ -110,7 +110,9 @@ definePageMeta({
           charset: 'utf-8'
         }
       ],
-      __dangerouslyDisableSanitizers: ['script']
+      __dangerouslyDisableSanitizersByTagID: {
+        'facebook-pixel': ['innerHTML']
+      }
     }
   }
 })
