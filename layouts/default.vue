@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fondodefault">
     <Header />  <!-- Encabezado global -->
     <NuxtPage />    <!-- Aquí se renderizan las páginas -->
     <Footer />  <!-- Pie de página global -->
@@ -14,4 +14,7 @@ import Footer from '~/components/Footer.vue'
 
 <style scoped>
 /* Estilos globales específicos del layout */
+.fondodefault{
+  overflow-x: hidden;
+}
 </style>

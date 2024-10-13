@@ -16,6 +16,7 @@
    <CursosSlide />
   <Testimonios/>
   <Conocenos/>
+  <Wsp/>
   </Main>
 </template>
 
