@@ -3,7 +3,7 @@
 
 
   <div>
-    <section class=" bg-main text-white text-center">
+    <section class=" bg-main text-white text-center p-[16px]">
       <h1 class="text-5xl font-bold mb-4 text-titulo">Bienvenido a Métodos Villegas</h1>
       <p class="text-lg mb-6">Tenemos muchos cursos para ti y para toda tu familia</p>
      <ButtonInicio enviara="cursos"  type="button">
