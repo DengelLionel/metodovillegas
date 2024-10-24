@@ -9,7 +9,7 @@
       <a href="/" class="mr-5 hover:text-white cursor-pointer">INICIO</a>
        <a  @click.prevent="scrollToSection('conocenos')" href="#" class="mr-5 hover:text-white cursor-pointer">CONÓCENOS</a>
       <a  @click.prevent="scrollToSection('cursos')" href="#" class="mr-5 hover:text-white cursor-pointer">CURSOS</a>
-      <a class="mr-5 hover:text-white cursor-pointer" href="/manifestacion" target="_blank">MANIFESTACIÓN</a>
+
    
     </nav>
   <!--   <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button

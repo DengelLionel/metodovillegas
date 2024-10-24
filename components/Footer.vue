@@ -17,9 +17,7 @@
           <li>
             <a  @click.prevent="scrollToSection('cursos')" href="#" class="text-gray-400 hover:text-white cursor-pointer">CURSOS</a>
           </li>
-          <li>
-            <a href="/manifestacion" class="text-gray-400 hover:text-white cursor-pointer">MANIFESTACIÓN</a>
-          </li>
+   
           <li>
             <a  @click.prevent="scrollToSection('conocenos')" href="#" class="text-gray-400 hover:text-white cursor-pointer">CONOCENOS</a>
           </li>
