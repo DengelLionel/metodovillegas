@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-main py-20">
+    <div class="bg-main">
         <slot>contenido</slot>
     </div>
 </template>

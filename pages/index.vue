@@ -3,13 +3,7 @@
 
 
   <div>
-    <section class=" bg-main text-white text-center p-[16px]">
-      <h1 class="text-5xl font-bold mb-4 text-titulo">Bienvenido a Métodos Villegas</h1>
-      <p class="text-lg mb-6">Tenemos muchos cursos para ti y para toda tu familia</p>
-     <ButtonInicio enviara="cursos"  type="button">
-        Aprende más
-      </ButtonInicio> 
-    </section>
+    <HeroBanner/>
     <!-- Puedes añadir más secciones aquí -->
   </div>
   <Statistic/>
@@ -28,6 +22,7 @@ import Main from '~/components/Main.vue'
 import Testimonios from '~/components/Testimonios.vue'
 import CursosSlide from '~/components/CursosSlide.vue';
 import Conocenos from '~/components/Conocenos.vue'
+import HeroBanner from '~/components/HeroBanner.vue'
 </script>
 
 <style scoped>

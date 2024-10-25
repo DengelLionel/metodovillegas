@@ -14,6 +14,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-color:  rgb(1, 0, 3);
   width: 100vw;
   height: 100vh;
   overflow-x: hidden; /* Asegurar que no haya desbordamiento */
