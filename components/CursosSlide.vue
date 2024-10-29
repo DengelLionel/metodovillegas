@@ -49,7 +49,7 @@ const isReady = ref(false);
 onMounted(async () => {
   try {
     // Llama al proxy en Netlify para obtener los datos de la hoja de cursos
-    const response = await axios.get('https://proxyvillegas-dht37kq9l-dengellionels-projects.vercel.app/.netlify/functions/proxy-google-sheet?sheet=Cursos');
+    const response = await axios.get('https://proxyvillegas.vercel.app/.netlify/functions/proxy-google-sheet?sheet=Cursos');
     cursos.value = response.data;
     console.log("Datos de cursos:", cursos.value);
     isReady.value = true;

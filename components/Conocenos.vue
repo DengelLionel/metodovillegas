@@ -43,7 +43,7 @@ const isReady = ref(false);
 onMounted(async () => {
   try {
     // Llama al proxy en Netlify para obtener los datos de la hoja de Conócenos
-    const responseConocenos = await axios.get('https://proxyvillegas-dht37kq9l-dengellionels-projects.vercel.app/.netlify/functions/proxy-google-sheet?sheet=Conocenos');
+    const responseConocenos = await axios.get('https://proxyvillegas.vercel.app/.netlify/functions/proxy-google-sheet?sheet=Conocenos');
     if (responseConocenos.data.length > 0) {
       const data = responseConocenos.data[0];
       conocenos.value = {
