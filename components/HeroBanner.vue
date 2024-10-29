@@ -35,7 +35,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await axios.get("https://proxyvillegas.vercel.app/.netlify/functions/proxy-google-sheet?sheet=Bannerprincipal");
+      const response = await axios.get("https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=Bannerprincipal");
       const data = response.data;
 
       if (data.length > 0) {
