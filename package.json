@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@splidejs/vue-splide": "^0.6.12",
+    "axios": "^1.7.7",
     "nuxt": "^3.13.0",
     "swiper": "^9.4.1",
     "vue": "latest",

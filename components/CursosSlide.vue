@@ -1,41 +1,62 @@
 <template>
-<div >
-  <Subtitulo>
-    Cursos
-  </Subtitulo>
-<div id="cursos" class="mt-[20px] relative container-swiper-slidder">
-
-    <!-- Swiper Slider -->
-    <swiper
-      :modules="[Navigation, Pagination, Scrollbar]" 
-      :slides-per-view="3"
-      :loop="true"
-      :autoplay="{
-        delay: 3000,
-        disableOnInteraction: false
-      }"
-      navigation
-      :scrollbar="{ draggable: true }"
-    >
-      <swiper-slide class="slide-curso" v-for="i in 9" :key="i">
-        <img
-          class="imagen-curso-slide"
-          src="/images/imagen1c.png"
-          alt="Metodo villegas"
-        />
-      </swiper-slide>
-
-  
-    </swiper>
+  <div>
+    <Subtitulo>
+      Cursos
+    </Subtitulo>
+    <div id="cursos" class="mt-[20px] relative container-swiper-slidder">
+      <!-- Skeleton Loader para mejorar la experiencia de usuario durante la carga -->
+      <div v-if="!isReady" class="skeleton-container">
+        <div v-for="i in 3" :key="i" class="skeleton-slide"></div>
+      </div>
+      <!-- Swiper Slider -->
+      <swiper
+        v-else
+        :modules="[Navigation, Pagination, Scrollbar]" 
+        :slides-per-view="3"
+        :loop="true"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false
+        }"
+        navigation
+        :scrollbar="{ draggable: true }"
+      >
+        <!-- Renderizar cursos dinámicamente -->
+        <swiper-slide class="slide-curso" v-for="curso in cursos" :key="curso.id">
+          <a :href="curso.url_curso" target="_blank">
+            <img
+              class="imagen-curso-slide"
+              :src="curso.imagen_curso"
+              :alt="'Imagen del curso ' + curso.id"
+            />
+          </a>
+        </swiper-slide>
+      </swiper>
+    </div>
   </div>
-</div>
-  
 </template>
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Scrollbar } from 'swiper';  // Importar los módulos necesarios
 import 'swiper/swiper-bundle.css';  // Importar el CSS necesario
+import axios from 'axios';
+import { ref, onMounted } from 'vue';
+
+const cursos = ref([]);
+const isReady = ref(false);
+
+onMounted(async () => {
+  try {
+    // Llama al proxy en Netlify para obtener los datos de la hoja de cursos
+    const response = await axios.get('https://proxyvillegas-dht37kq9l-dengellionels-projects.vercel.app/.netlify/functions/proxy-google-sheet?sheet=Cursos');
+    cursos.value = response.data;
+    console.log("Datos de cursos:", cursos.value);
+    isReady.value = true;
+  } catch (error) {
+    console.error("Error fetching data for courses:", error);
+  }
+});
 </script>
 
 <style scoped>
@@ -86,6 +107,32 @@ import 'swiper/swiper-bundle.css';  // Importar el CSS necesario
     width: 320px;
     height: auto;
     object-fit: cover;
+  }
+}
+
+/* Estilos para el Skeleton Loader */
+.skeleton-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skeleton-slide {
+  width: 220px;
+  height: 300px;
+  background-color: #e0e0e0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>
