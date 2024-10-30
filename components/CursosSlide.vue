@@ -17,10 +17,12 @@
         :scrollbar="{ draggable: true }"
         :simulate-touch="true"
         :grab-cursor="true"
-        :breakpoints="{
-          0: { slidesPerView: 2 },       // Para pantallas pequeñas (móviles)
-          768: { slidesPerView: 3 }      // Para pantallas grandes (tablets y desktop)
-        }"
+        :space-between="15" 
+  :centered-slides="true"
+  :breakpoints="{
+    0: { slidesPerView: 2, spaceBetween: 10 }, 
+    768: { slidesPerView: 3, spaceBetween: 15 }
+  }"
       >
         <swiper-slide class="slide-curso" v-for="curso in cursos" :key="curso.id">
           <a :href="curso.url_curso" class="relative h-auto" target="_blank">
