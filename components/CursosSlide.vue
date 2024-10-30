@@ -18,7 +18,7 @@
         :simulate-touch="true"
         :grab-cursor="true"
         :breakpoints="{
-          0: { slidesPerView: 2 },       // Para pantallas pequeñas (móviles)
+          0: { slidesPerView: 1 },       // Para pantallas pequeñas (móviles)
           768: { slidesPerView: 3 }      // Para pantallas grandes (tablets y desktop)
         }"
       >
