@@ -16,7 +16,7 @@
         </template>
         <!-- Cargar testimonios dinámicamente -->
         <template v-else>
-          <div v-for="testimonio in testimonios" :key="testimonio.id" class="w-[150px] lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div v-for="testimonio in testimonios" :key="testimonio.id" class="w-[160px] lg:w-1/3 lg:mb-0 mb-6 p-4">
             <div class="h-full text-center">
               <img
                 :alt="testimonio.nombre"
