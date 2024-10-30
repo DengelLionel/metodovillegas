@@ -8,19 +8,19 @@
         <div v-for="i in 3" :key="i" class="skeleton-slide"></div>
       </div>
       <swiper
-        v-else
-        :modules="[Navigation, Pagination, Scrollbar]" 
-        :slides-per-view="3"
-        :loop="false"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }"
-        navigation
-        :scrollbar="{ draggable: true }"
-        :simulate-touch="true"
-        :grab-cursor="true"
-        :space-between="15" 
-  :centered-slides="true"
+       v-else
+  :modules="[Navigation, Pagination, Scrollbar]" 
+  :slides-per-view="'auto'"
+  :loop="false"
+  :autoplay="{ delay: 3000, disableOnInteraction: false }"
+  navigation
+  :scrollbar="{ draggable: true }"
+  :simulate-touch="true"
+  :grab-cursor="true"
+  :space-between="15" 
+  :centered-slides="false"
   :breakpoints="{
-    0: { slidesPerView: 2, spaceBetween: 10 }, 
+    0: { slidesPerView: 2, spaceBetween: 10, centeredSlides: false, paddingRight: 20 }, 
     768: { slidesPerView: 3, spaceBetween: 15 }
   }"
       >
