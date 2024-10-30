@@ -2,7 +2,7 @@
   <button
     :type="type"
     @click="handleClick"
-    class="bg-boton border-[1.5px] rounded-full border-boton tracking-[0.09em] hover:text-primary text-primary font-bold py-3 px-8 transition-transform duration-300 ease-in-out text-xl shadow-button animate-button glowing-button"
+    class="bg-boton border-[1.5px] rounded-full border-boton tracking-[0.09em] hover:text-primary text-primary font-bold py-3 px-8 transition-transform duration-300 ease-in-out text-md md:text-xl shadow-button animate-button glowing-button"
   >
     <slot>Botón</slot>
   </button>
