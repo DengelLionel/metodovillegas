@@ -20,7 +20,7 @@
   :space-between="15" 
   :centered-slides="false"
   :breakpoints="{
-    0: { slidesPerView: 2, spaceBetween: 10, centeredSlides: false, paddingRight: 20 }, 
+    0: { slidesPerView: 2, spaceBetween: 10, centeredSlides: false, paddingRight: 100 }, 
     768: { slidesPerView: 3, spaceBetween: 15 }
   }"
       >
