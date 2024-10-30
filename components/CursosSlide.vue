@@ -8,18 +8,19 @@
         <div v-for="i in 3" :key="i" class="skeleton-slide"></div>
       </div>
       <swiper
-         v-else
-  :modules="[Navigation, Pagination]" 
+       v-else
+  :modules="[Navigation, Pagination, Scrollbar]" 
   :slides-per-view="2" 
   :loop="false"
   :autoplay="{ delay: 3000, disableOnInteraction: false }"
   navigation
+  :scrollbar="{ draggable: true }"
   :simulate-touch="true"
   :grab-cursor="true"
-  :space-between="10" 
+  :space-between="10"
   :breakpoints="{
-    0: { slidesPerView: 2, spaceBetween: 10 }, 
-    768: { slidesPerView: 3, spaceBetween: 15 } 
+    0: { slidesPerView: 'auto', spaceBetween: 10 }, 
+    768: { slidesPerView: 3, spaceBetween: 15 }
   }"
       >
         <swiper-slide class="slide-curso" v-for="curso in cursos" :key="curso.id">
@@ -88,20 +89,21 @@ onMounted(async () => {
 
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
-  .imagen-curso-slide {
-    width: 280px;
+
+   .imagen-curso-slide {
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
   .slide-curso {
-    width: 280px !important;
-    margin-right: 20px;
+    /* Sin width explícito para adaptarse automáticamente */
+    margin-right: 10px;
     display: flex;
     justify-content: center;
   }
-    .container-swiper-slidder {
-    padding-right: 10px;
-  }
+
+
+
 }
 
 /* Ajustes para pantallas grandes */
