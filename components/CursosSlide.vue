@@ -9,12 +9,12 @@
       </div>
       <swiper
        v-else
-  :modules="[Navigation, Pagination, Scrollbar]" 
+  :modules="[Navigation, Pagination]" 
   :slides-per-view="'auto'"
   :loop="false"
   :autoplay="{ delay: 3000, disableOnInteraction: false }"
   navigation
-  :scrollbar="{ draggable: true }"
+ 
   :simulate-touch="true"
   :grab-cursor="true"
   :space-between="15" 
