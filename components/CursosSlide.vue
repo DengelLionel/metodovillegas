@@ -89,7 +89,7 @@ onMounted(async () => {
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
   .imagen-curso-slide {
-    width: 220px;
+    width: 280px;
     height: auto;
     object-fit: cover;
   }
