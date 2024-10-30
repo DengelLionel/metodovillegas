@@ -8,20 +8,18 @@
         <div v-for="i in 3" :key="i" class="skeleton-slide"></div>
       </div>
       <swiper
-       v-else
+         v-else
   :modules="[Navigation, Pagination]" 
-  :slides-per-view="'auto'"
+  :slides-per-view="2" 
   :loop="false"
   :autoplay="{ delay: 3000, disableOnInteraction: false }"
   navigation
- 
   :simulate-touch="true"
   :grab-cursor="true"
-  :space-between="15" 
-  :centered-slides="false"
+  :space-between="10" 
   :breakpoints="{
-    0: { slidesPerView: 2, spaceBetween: 10, centeredSlides: false, paddingRight: 100 }, 
-    768: { slidesPerView: 3, spaceBetween: 15 }
+    0: { slidesPerView: 2, spaceBetween: 10 }, 
+    768: { slidesPerView: 3, spaceBetween: 15 } 
   }"
       >
         <swiper-slide class="slide-curso" v-for="curso in cursos" :key="curso.id">
@@ -100,6 +98,9 @@ onMounted(async () => {
     margin-right: 20px;
     display: flex;
     justify-content: center;
+  }
+    .container-swiper-slidder {
+    padding-right: 10px;
   }
 }
 
