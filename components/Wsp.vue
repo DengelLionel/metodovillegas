@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://wa.link/ei99js" 
+    :href="whatsappdato.whatsapp" 
     target="_blank"
     class="fixed bottom-4 right-4 z-50 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-bounce hover:scale-110 transition-transform duration-300"
   >
@@ -12,7 +12,28 @@
 </template>
 
 <script setup>
-// No necesitas agregar lógica extra para este botón si es solo un enlace.
+import axios from 'axios';
+import { ref, onMounted } from 'vue';
+
+const whatsappdato = ref({ whatsapp: '' });
+const isReady = ref(false);
+
+onMounted(async () => {
+  try {
+    // Llama al proxy en Netlify para obtener los datos de la hoja de Conócenos
+    const responsewhatsapp = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=redes_sociales');
+    if (responsewhatsapp.data.length > 0) {
+      const data = responsewhatsapp.data[0];
+      whatsappdato.value = {
+        whatsapp: data.whatsapp || '',
+      };
+    }
+    isReady.value = true;
+
+  } catch (error) {
+    console.error("Error fetching data for whatsapp:", error);
+  }
+});
 </script>
 
 <style scoped>
