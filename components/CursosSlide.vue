@@ -23,14 +23,14 @@
       >
         <!-- Renderizar cursos dinámicamente -->
         <swiper-slide class="slide-curso" v-for="curso in cursos" :key="curso.id">
-          <a :href="curso.url_curso" class="relative" target="_blank">
+          <a :href="curso.url_curso" class="relative h-auto" target="_blank">
             <img
               class="imagen-curso-slide"
               :src="curso.imagen_curso"
               :alt="'Imagen del curso ' + curso.id"
             />
-            <div class="">
-  <ButtonAncla :url="curso.url_curso" class="absolute bottom-[10px]">
+            <div  class="absolute bottom-[10px]">
+  <ButtonAncla :url="curso.url_curso">
     MAS INFROMACIÓN
   </ButtonAncla>
             </div>
