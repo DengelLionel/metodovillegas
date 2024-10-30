@@ -4,24 +4,20 @@
       Cursos
     </Subtitulo>
     <div id="cursos" class="mt-[20px] relative container-swiper-slidder">
-      <!-- Skeleton Loader para mejorar la experiencia de usuario durante la carga -->
       <div v-if="!isReady" class="skeleton-container">
         <div v-for="i in 3" :key="i" class="skeleton-slide"></div>
       </div>
-      <!-- Swiper Slider -->
       <swiper
         v-else
         :modules="[Navigation, Pagination, Scrollbar]" 
         :slides-per-view="3"
         :loop="true"
-        :autoplay="{
-          delay: 3000,
-          disableOnInteraction: false
-        }"
+        :autoplay="{ delay: 3000, disableOnInteraction: false }"
         navigation
         :scrollbar="{ draggable: true }"
+        :simulate-touch="true"
+        :grab-cursor="true"
       >
-        <!-- Renderizar cursos dinámicamente -->
         <swiper-slide class="slide-curso" v-for="curso in cursos" :key="curso.id">
           <a :href="curso.url_curso" class="relative h-auto" target="_blank">
             <img
@@ -29,18 +25,18 @@
               :src="curso.imagen_curso"
               :alt="'Imagen del curso ' + curso.id"
             />
-            <div  class="absolute bottom-[10px]">
-  <ButtonAncla :url="curso.url_curso">
-    MAS INFROMACIÓN
-  </ButtonAncla>
+            <div class="absolute bottom-0 left-0 w-full text-center p-2">
+              <ButtonAncla :url="curso.url_curso">
+                MÁS INFORMACIÓN
+              </ButtonAncla>
             </div>
-          
           </a>
         </swiper-slide>
       </swiper>
     </div>
   </div>
 </template>
+
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
