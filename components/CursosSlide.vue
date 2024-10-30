@@ -94,7 +94,7 @@ onMounted(async () => {
     object-fit: cover;
   }
   .slide-curso {
-    width: 220px !important;
+    width: 280px !important;
     margin-right: 20px;
     display: flex;
     justify-content: center;
