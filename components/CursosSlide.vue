@@ -11,7 +11,7 @@
         v-else
         :modules="[Navigation, Pagination, Scrollbar]" 
         :slides-per-view="3"
-        :loop="true"
+        :loop="false"
         :autoplay="{ delay: 3000, disableOnInteraction: false }"
         navigation
         :scrollbar="{ draggable: true }"
