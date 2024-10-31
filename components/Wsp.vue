@@ -1,5 +1,7 @@
 <template>
+  <div v-if="!isReady" class="fixed bottom-4 right-4 z-50 w-16 h-16 bg-gray-300 rounded-full animate-pulse"></div>
   <a
+    v-else
     :href="whatsappdato.whatsapp" 
     target="_blank"
     class="fixed bottom-4 right-4 z-50 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-bounce hover:scale-110 transition-transform duration-300"
