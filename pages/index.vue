@@ -6,7 +6,7 @@
     <HeroBanner/>
     <!-- Puedes añadir más secciones aquí -->
   </div>
-  <Statistic/>
+<!--   <Statistic/> -->
    <CursosSlide />
   <Testimonios/>
   <Conocenos/>
@@ -17,7 +17,7 @@
 <script setup>
 
 import ButtonVillegas  from "~/components/ButtonVillegas.vue";
-import Statistic from "~/components/Statistic.vue";
+/* import Statistic from "~/components/Statistic.vue"; */
 import Main from '~/components/Main.vue'
 import Testimonios from '~/components/Testimonios.vue'
 import CursosSlide from '~/components/CursosSlide.vue';
