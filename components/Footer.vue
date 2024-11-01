@@ -33,13 +33,13 @@
       
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 sm:mr-[80px] md:mr-[100px] mt-2 justify-center sm:justify-start">
-        <a class="text-gray-400">
+        <a :href="red.facebook" class="text-gray-400">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
       
-        <a class="ml-3 text-gray-400">
+        <a :href="red.instagram" class="ml-3 text-gray-400">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
@@ -54,7 +54,30 @@
 <script setup>
 const currentYear = new Date().getFullYear();
 import { useScrollToSection } from '~/composables/useScrollToSection';
-
+import axios from 'axios';
+import { ref, onMounted } from 'vue';
 // Usar el composable para manejar el desplazamiento
 const { scrollToSection } = useScrollToSection();
+
+
+const red = ref({ facebook: '',instagram:"" });
+const isReady = ref(false);
+
+onMounted(async () => {
+  try {
+    // Llama al proxy en Netlify para obtener los datos de la hoja de Conócenos
+    const responsered = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=redes_sociales');
+    if (responsered.data.length > 0) {
+      const data = responsered.data[0];
+      red.value = {
+       facebook: data.facebook || '',
+        instagram: data.instagram || ''
+      };
+    }
+    isReady.value = true;
+
+  } catch (error) {
+    console.error("Error fetching data for whatsapp:", error);
+  }
+});
 </script>
