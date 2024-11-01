@@ -10,11 +10,11 @@
         <source :srcset="imageDesktop" media="(min-width: 600px)" class="w-screen object-cover" />
         <img :src="imageMobile" alt="Responsive Banner" class="w-full h-[500px] object-cover" width="500" height="500" />
       </picture>
-      <div class="absolute bottom-[10%] left-[20%]">
+   <!--    <div class="absolute bottom-[10%] left-[20%]">
         <ButtonAncla :url="buttonUrl">
           {{ buttonText }}
         </ButtonAncla>
-      </div>
+      </div> -->
     </section>
   </div>
 </template>
