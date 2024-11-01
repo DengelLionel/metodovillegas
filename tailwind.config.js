@@ -13,7 +13,7 @@ export default {
       colors:{
         primary:"#003a30",
         secundary:"#151515",
-        main:"#1A1B1F",
+        main:"#003a30",
         titulo:"#E9C088",
         boton:"#E9C088"
       }
