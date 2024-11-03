@@ -2,7 +2,7 @@
   <div class="text-gray-400 bg-primary body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0 cursor-pointer">
-     <img class="w-[80px] h-auto object-cover" src="@/assets/images/logometodovillegas.webp" alt="Metodo villegas" />
+     <img class="w-[80px] h-auto object-cover" src="@/assets/images/logovillegasnuevo.png" alt="Metodo villegas" />
       <span class="ml-3 text-xl">Método Villegas</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">

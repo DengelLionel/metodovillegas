@@ -3,7 +3,7 @@
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-center flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-          <img class="w-[80px] h-auto object-cover" src="@/assets/images/logometodovillegas.webp" alt="Metodo villegas" />
+          <img class="w-[80px] h-auto object-cover" src="@/assets/images/logovillegasnuevo.png" alt="Metodo villegas" />
         <span class="ml-3 text-xl">Método Villegas</span>
       </a>
      
@@ -67,6 +67,7 @@ onMounted(async () => {
   try {
     // Llama al proxy en Netlify para obtener los datos de la hoja de Conócenos
     const responsered = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=redes_sociales');
+
     if (responsered.data.length > 0) {
       const data = responsered.data[0];
       red.value = {
