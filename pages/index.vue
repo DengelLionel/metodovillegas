@@ -6,7 +6,7 @@
     <HeroBanner/>
     <!-- Puedes añadir más secciones aquí -->
   </div>
-<!--   <Statistic/> -->
+ <Statistic/> 
    <CursosSlide />
   <Testimonios/>
   <Conocenos/>
