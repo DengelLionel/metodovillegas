@@ -66,7 +66,7 @@ const isReady = ref(false);
 onMounted(async () => {
   try {
     // Llama al proxy en Netlify para obtener los datos de la hoja de Conócenos
-    const responsered = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=redsocial');
+    const responsered = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=media');
 
     if (responsered.data.length > 0) {
       const data = responsered.data[0];
