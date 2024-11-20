@@ -1,7 +1,7 @@
 <template>
   <section class="mt-10 md:px-16">
     <h1 class="text-center text-3xl leading-normal lg:text-[2.5rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">
-      {{ manifestacion.value.titulo }}
+      {{ manifestacion.titulo }}
     </h1>
     <p class="text-lg lg:text-2xl text-center mb-10 text-white tracking-[0.06em]">
       Transforma tu vida en menos de un mes con técnicas universales probadas que te llevarán a vivir
