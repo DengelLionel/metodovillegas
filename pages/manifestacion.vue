@@ -1,7 +1,7 @@
 <template>
   <section class="mt-10 md:px-16">
     <h1 class="text-center text-3xl leading-normal lg:text-[2.5rem] mb-6 text-titulo tracking-[0.06em] lg:leading-[4rem]">
-      Merezco la Vida de Mis Sueños: Descubre Cómo Manifestar Abundancia y Éxito en Sólo 21 Días
+      {{ manifestacion.value.titulo }}
     </h1>
     <p class="text-lg lg:text-2xl text-center mb-10 text-white tracking-[0.06em]">
       Transforma tu vida en menos de un mes con técnicas universales probadas que te llevarán a vivir
@@ -44,6 +44,28 @@ import Bonus from '~/components/Bonus.vue'
 import Regalos from '~/components/Regalos.vue'
 import PieLanding from '~/components/PieLanding.vue'
 import Video from '~/components/Video.vue'
+
+import axios from 'axios';
+import { ref, onMounted } from 'vue';
+const manifestacion = ref({ titulo: '' });
+const isReady = ref(false);
+
+onMounted(async () => {
+  try {
+    // Llama al proxy en Netlify para obtener los datos de la hoja de Conócenos
+    const responsemanifes = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=manifestacion');
+    if (responsemanifes.data.length > 0) {
+      const data = responsemanifes.data[0];
+      manifestacion.value = {
+        titulo: data.titulo || '',
+      };
+    }
+    isReady.value = true;
+
+  } catch (error) {
+    console.error("Error fetching data for whatsapp:", error);
+  }
+});
 
 definePageMeta({
   layout: 'empty',
