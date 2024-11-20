@@ -27,7 +27,7 @@ onMounted(async () => {
     if (responsewhatsapp.data.length > 0) {
       const data = responsewhatsapp.data[0];
       whatsappdato.value = {
-        whatsapp: data.whatsapp || '',
+        whatsapp: data.wsp || '',
       };
     }
     isReady.value = true;
