@@ -71,8 +71,8 @@ onMounted(async () => {
     if (responsered.data.length > 0) {
       const data = responsered.data[0];
       red.value = {
-       faceb: data.fb || '',
-        ing: data.ing || ''
+       facebook: data.faceb || '',
+        instagram: data.ing || ''
       };
     }
     isReady.value = true;
