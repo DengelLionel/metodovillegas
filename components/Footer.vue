@@ -66,13 +66,13 @@ const isReady = ref(false);
 onMounted(async () => {
   try {
     // Llama al proxy en Netlify para obtener los datos de la hoja de Conócenos
-    const responsered = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=media');
+    const responsered = await axios.get('https://dapper-vacherin-b465fb.netlify.app/.netlify/functions/proxy-google-sheet?sheet=Conocenos');
 
     if (responsered.data.length > 0) {
       const data = responsered.data[0];
       red.value = {
-       facebook: data.fb || '',
-        instagram: data.ing || ''
+       faceb: data.fb || '',
+        ing: data.ing || ''
       };
     }
     isReady.value = true;
